@@ -19,6 +19,8 @@ class Searchbar extends PureComponent {
   onInputChange = e => {
     const name = e.currentTarget.value.trim();
     this.setState({ name: name.toLowerCase() });
+    console.log(e);
+    console.log(name);
   };
 
   onFormSubmit = e => {
@@ -38,7 +40,6 @@ class Searchbar extends PureComponent {
   };
 
   render() {
-    debugger;
     return (
       <Header>
         <SearchForm onSubmit={this.onFormSubmit}>

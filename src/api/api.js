@@ -14,5 +14,6 @@ export const onSearch = (name, page) => {
       orientation: 'horizontal',
     },
   });
+  console.log(response);
   return response;
 };
